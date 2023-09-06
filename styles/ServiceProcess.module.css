@@ -1,0 +1,149 @@
+.CardsContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.Cards {
+  width: 23%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  box-sizing: border-box;
+}
+.ImageSection {
+  height: 60%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 15px 12px 4px #949494;
+  border-radius: 50%;
+  position: relative;
+}
+.Image {
+  height: 40%;
+  width: 40%;
+}
+.StepNumber {
+  position: absolute;
+  background-color: rgb(123, 175, 237);
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0px 15px 12px 4px #949494;
+}
+.Title {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 60px;
+  text-align: center;
+  font-family: 'BTitr', sans-serif;
+  text-align: center;
+}
+.SubTitle {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 50px;
+  text-align: center;
+  font-family: 'IranSans', sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1024px) {
+  .Cards {
+    min-height: 100%;
+    height: fit-content;
+  }
+  .Title {
+    line-height: 30px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .SubTitle {
+    line-height: 20px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .ImageSection {
+    height: 100%;
+    width: 90%;
+  }
+  .StepNumber {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .CardsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 75px;
+  }
+  .Cards {
+    width: 45%;
+    gap: 40px;
+    min-height: 100%;
+    height: fit-content;
+  }
+  .Title {
+    font-size: 15px;
+  }
+  .SubTitle {
+    font-size: 15px;
+  }
+  .ImageSection {
+    height: 100%;
+    width: 40%;
+  }
+  .Image {
+    width: 30%;
+    height: 30%;
+  }
+  .StepNumber {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .CardsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+  }
+  .Cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .SubTitle {
+    width: 45%;
+  }
+  .ImageSection {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 460px) {
+}

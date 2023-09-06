@@ -1,0 +1,71 @@
+.Card {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 15px 12px 4px #949494;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+.Card:hover {
+  animation: CardHover 0.5s forwards;
+}
+@keyframes CardHover {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: rgb(123, 175, 237);
+  }
+}
+.LogoSection {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ImageSection {
+  width: 80%;
+  height: 80%;
+}
+.TitleSection {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'IranSans', sans-serif;
+}
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 990px) {
+  .Card {
+    width: 90%;
+    height: 100px;
+    flex-direction: row-reverse;
+  }
+  .ImageSection {
+    width: 60%;
+    height: 95%;
+  }
+}
+@media screen and (max-width: 660px) {
+  .TitleSection {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .TitleSection {
+    font-size: 12px;
+  }
+}

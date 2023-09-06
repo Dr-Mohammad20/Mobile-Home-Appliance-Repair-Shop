@@ -1,0 +1,195 @@
+.navbar {
+  direction: rtl;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbarSectionRight {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 40px;
+}
+.Title {
+  font-family: 'IranSans', sans-serif;
+}
+.navbarSectionLeft {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.PhoneSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  margin-left: 5%;
+}
+.LogoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.Phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 85%;
+  font-weight: bold;
+  font-size: 35px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: 'BTitr', sans-serif;
+}
+
+.InstaLogo {
+  width: 50px;
+  height: 50px;
+}
+.InstaLogo:hover {
+  animation: hovericon 0.5s infinite;
+}
+
+@keyframes hovericon {
+  0% {
+    width: 50px;
+    height: 50px;
+  }
+
+  70% {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0 7px 15px #000);
+  }
+
+  100% {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .navbar {
+    flex-direction: column;
+    height: fit-content;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  .navbarSectionRight {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+  }
+  .navbarSectionLeft {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Phone {
+    font-size: 20px;
+    padding: 2px;
+  }
+
+  .InstaLogo {
+    width: 40px;
+    height: 40px;
+  }
+  .InstaLogo:hover {
+    animation: hovericon 0.5s infinite;
+  }
+
+  @keyframes hovericon {
+    0% {
+      width: 40px;
+    }
+
+    70% {
+      width: 45px;
+      filter: drop-shadow(0 7px 15px #000);
+    }
+
+    100% {
+      width: 40px;
+    }
+  }
+}
+@media screen and (max-width: 990px) {
+  .navbar {
+    font-size: 12px;
+  }
+  .Phone {
+    font-size: 15px;
+    padding: 2px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .navbar {
+    gap: 5px;
+  }
+
+  .navbarSectionRight {
+    gap: 5px;
+    padding-right: 10px;
+  }
+  .navbarSectionLeft {
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .PhoneSection {
+    width: 90%;
+  }
+
+  .Phone {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .InstaLogo {
+    width: 40%;
+    height: 40%;
+  }
+  .InstaLogo:hover {
+    animation: hovericon 0.5s infinite;
+  }
+
+  @keyframes hovericon {
+    0% {
+      width: 40%;
+      height: 40%;
+    }
+
+    70% {
+      width: 50%;
+      height: 50%;
+      filter: drop-shadow(0 7px 15px #000);
+    }
+
+    100% {
+      width: 40%;
+      height: 40%;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+}

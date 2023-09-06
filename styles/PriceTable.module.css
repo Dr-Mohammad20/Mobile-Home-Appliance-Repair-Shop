@@ -1,0 +1,53 @@
+.Container {
+  width: 95dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 4px solid rgb(123, 175, 237);
+  border-bottom: none;
+}
+.Table {
+  width: 100%;
+  direction: rtl;
+  line-height: 90px;
+  text-align: center;
+  font-family: 'BNazanin', sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  display: flex;
+  justify-content: space-between;
+}
+.ItemName {
+  width: 60%;
+  border-left: 4px solid rgb(123, 175, 237);
+  border-bottom: 4px solid rgb(123, 175, 237);
+}
+.ItemPrice {
+  width: 40%;
+  border-bottom: 4px solid rgb(123, 175, 237);
+}
+
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 990px) {
+  .Table {
+    flex-direction: column;
+    font-size: large;
+    line-height: 50px;
+  }
+  .ItemName {
+    width: 100%;
+    border: none;
+  }
+  .ItemPrice {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 660px) {
+}
+@media screen and (max-width: 460px) {
+}
